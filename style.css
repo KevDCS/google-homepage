@@ -1,0 +1,215 @@
+html {
+    height: 100vh;
+    min-height: 100%;
+}
+
+body {
+    margin: 0px;
+}
+
+/*-----------Navbar----------*/
+
+#navbar {
+    display: grid;
+    grid-template-columns: 1fr 55px 55px 55px;
+    grid-template-rows: 50px;
+    grid-template-areas: " . gmail images menu sign-in";
+    padding-right: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: #5F6368;;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1em;
+
+}
+
+#menu img {
+    height: 22px;
+    width: 22px;
+    padding-right: 5px;
+}
+
+#gmail {
+    grid-area: gmail ;
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+}
+
+#gmail:hover {
+    text-decoration: underline;
+}
+
+#images {
+    grid-area: images;
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+}
+
+#images:hover {
+    text-decoration: underline;
+}
+
+#menu {
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+    opacity: 0.5;
+}
+
+#menu:hover {
+    opacity: 1;
+}
+
+#sign-in {
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+    background: #4486f6;
+    color: white;
+    padding: 8px 15px 8px 15px;
+    border-radius: 3px;
+}
+
+/*---------Main--------*/
+
+#main {
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas:
+    ". logo ."
+    ". search ." 
+    ". flexbox .";
+}
+
+#logo {
+    grid-area: logo;
+    padding: 15px;
+    justify-self: center;
+    align-self: end;
+}
+
+#logo img {
+    height: 100px;
+    width: 300px;
+}
+
+#search {
+    grid-area: search;
+    height: 30px;
+    width: 100%;
+    margin: 5px;
+    align-self: center;
+    border-radius: 15px;
+    border: 1px solid hsl(240, 10%, 80%);
+}
+
+#search:hover {
+    border: none;
+    box-shadow: 0px 0px 4px 0px #888;
+}
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+
+#google-search-button {
+    border-radius: 5px;
+    font-size: 15px;
+    color: #5F6368;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    margin: 2px;
+    padding: 9px 15px 9px 15px;
+    font-size: 1em;
+    
+}
+
+#feeling-lucky {
+    border-radius: 5px;
+    font-size: 15px;
+    color: #5F6368;
+    background: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    margin: 2px;
+    padding: 9px 15px 9px 15px;
+    font-size: 1em;
+}
+
+#google-search-button:hover {
+    border: 1px solid #5F6368;
+    color: black;
+}
+#feeling-lucky:hover {
+    border: 1px solid #5F6368;
+    color: black;
+}
+
+/*----------Footer-----------*/
+
+#footer {
+    /*set footer to bottom*/
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    height: 40px;
+    /*set footer to bottom*/
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    color: #5F6368;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: 100px 100px 165px 1fr 70px 70px 70px;
+    grid-template-rows: 40px;
+    grid-template-areas:
+    "advertising business hsw . privacy terms settings"
+}
+
+#advertising {
+    grid-area: advertising;
+    align-self: center;
+    padding-left: 20px;
+}
+
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+    padding-left: 20px;
+}
+
+#hsw {
+    grid-area: hsw;
+    justify-self: center;
+    align-self: center;
+    padding-left: 20px;
+}
+
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+    padding-right: 20px;
+}
+
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+    padding-right: 20px;
+}
+
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+    padding-right: 20px;
+}
